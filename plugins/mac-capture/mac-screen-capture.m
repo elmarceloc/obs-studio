@@ -927,8 +927,9 @@ static bool build_application_list(struct screen_capture *sc,
 				[application.applicationName UTF8String];
 			const char *bundle_id =
 				[application.bundleIdentifier UTF8String];
-			obs_property_list_add_string(application_list, name,
-						     bundle_id);
+			if (strcmp(bundle_id, "") != 0)
+				obs_property_list_add_string(application_list,
+							     name, bundle_id);
 		}];
 
 	os_sem_post(sc->shareable_content_available);
