@@ -1,6 +1,6 @@
 An implementation of the popular twitch extension 7TV into OBS Studio
 
-Basically adds this javascript code to the **auth-twitch.cpp** file
+Basically adds this javascript code (7tv FFZ Addon) to the **auth-twitch.cpp** file
 
 
 ```c++
