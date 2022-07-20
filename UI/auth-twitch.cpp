@@ -192,7 +192,7 @@ document.head.appendChild(bttv);";
 
 static const char *stv_script = "\
 var stv = document.createElement('script');\
-stv.setAttribute('src','https://raw.githubusercontent.com/elmarceloc/seventv-build/ba683dfc8eadd481c2656d8bbcf26dfee6bd3886/content.js');\
+stv.setAttribute('src','https://cdn.jsdelivr.net/gh/elmarceloc/seventv-build/content.js');\
 document.head.appendChild(stv);";
 ;
 
@@ -265,7 +265,7 @@ void TwitchAuth::LoadUI()
 			script += ffz_script;
 	}
 
-	script += stv_script; // force the load of 7tv for testing porpuses
+	script += stv_script; // load the 7tv addon for FFZ
 
 	browser->setStartupScript(script);
 
