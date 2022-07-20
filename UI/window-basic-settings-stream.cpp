@@ -76,6 +76,8 @@ void OBSBasicSettings::InitStreamPage()
 	ui->twitchAddonDropdown->addItem(
 		QTStr("Basic.Settings.Stream.TTVAddon.FFZ"));
 	ui->twitchAddonDropdown->addItem(
+		QTStr("Basic.Settings.Stream.TTVAddon.7TV"));
+	ui->twitchAddonDropdown->addItem(
 		QTStr("Basic.Settings.Stream.TTVAddon.Both"));
 
 	connect(ui->service, SIGNAL(currentIndexChanged(int)), this,

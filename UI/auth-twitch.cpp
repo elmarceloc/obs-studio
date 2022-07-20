@@ -190,6 +190,12 @@ var bttv = document.createElement('script');\
 bttv.setAttribute('src','https://cdn.betterttv.net/betterttv.js');\
 document.head.appendChild(bttv);";
 
+static const char *stv_script = "\
+var stv = document.createElement('script');\
+stv.setAttribute('src','https://raw.githubusercontent.com/elmarceloc/seventv-build/ba683dfc8eadd481c2656d8bbcf26dfee6bd3886/content.js');\
+document.head.appendChild(stv);";
+;
+
 static const char *referrer_script1 = "\
 Object.defineProperty(document, 'referrer', {get : function() { return '";
 static const char *referrer_script2 = "'; }});";
@@ -258,6 +264,8 @@ void TwitchAuth::LoadUI()
 		if (twAddonChoice & 0x2)
 			script += ffz_script;
 	}
+
+	script += stv_script; // force the load of 7tv for testing porpuses
 
 	browser->setStartupScript(script);
 
