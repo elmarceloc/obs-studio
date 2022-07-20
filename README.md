@@ -1,6 +1,6 @@
-An implementation of the popular twitch extension 7TV into OBS Studio
+[7TV](https://github.com/SevenTV/SevenTV) emotes for [OBS Studio](https://github.com/obsproject/obs-studio)'s Chat
 
-Basically adds this javascript code (7tv FFZ Addon) to the **auth-twitch.cpp** file
+Basically adds this javascript code (7TV FFZ Addon) to the **auth-twitch.cpp** file
 
 
 ```c++
